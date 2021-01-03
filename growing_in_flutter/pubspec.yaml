@@ -28,6 +28,8 @@ dependencies:
   hidden_drawer_menu: ^2.0.1
   # Theme Provider
   provider: ^4.3.2+3
+  # Curved Navigation Bar
+  curved_navigation_bar: ^0.3.7
 
 dev_dependencies:
   flutter_test:

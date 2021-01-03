@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
 //Theme Provider
 import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
+//Curved Navigation Bar
+import 'package:growing_in_flutter/CurvedNavigationBar/curved_navigation_bar.dart';
 
 void main() => runApp(MyApp());
  
@@ -16,7 +18,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 1;
+  int numberApp = 2;
   Widget materialApp;
 
   @override
@@ -25,6 +27,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = HiddenDrawerMenu();
     } else if (numberApp == 1) {
       materialApp = ThemeProvider();
+    } else if (numberApp == 2) {
+      materialApp = CurvedNavigationBar();
     } else {
       materialApp = NoAppSelected();
     }
