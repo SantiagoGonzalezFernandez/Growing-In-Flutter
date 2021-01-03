@@ -1,0 +1,5 @@
+Theme Provider
+
+Video: https://www.youtube.com/watch?v=EHOD9FcqiHc&t=12s&ab_channel=FernandoHerrera
+
+Original Post: https://developer.school/flutter-dynamic-theming-with-provider/ 

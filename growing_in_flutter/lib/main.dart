@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 //Imports that are mine
 //Hidden Drawer Menu
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
+//Theme Provider
+import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
 
 void main() => runApp(MyApp());
  
@@ -14,13 +16,15 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 0;
+  int numberApp = 1;
   Widget materialApp;
 
   @override
   Widget build(BuildContext context) {
     if(numberApp == 0){
       materialApp = HiddenDrawerMenu();
+    } else if (numberApp == 1) {
+      materialApp = ThemeProvider();
     } else {
       materialApp = NoAppSelected();
     }
