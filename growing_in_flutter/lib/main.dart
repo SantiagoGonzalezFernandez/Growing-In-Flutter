@@ -1,6 +1,7 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
 import 'package:growing_in_flutter/DownloadButton/download_button.dart';
+import 'package:growing_in_flutter/FoldableNavigationSidebar/foldable_navigation_sidebar.dart';
 
 //Imports that are mine
 //Hidden Drawer Menu
@@ -19,7 +20,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 3;
+  int numberApp = 4;
   Widget materialApp;
 
   @override
@@ -32,6 +33,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = CurvedNavigationBar();
     } else if (numberApp == 3) {
       materialApp = DownloadButton();
+    } else if (numberApp == 4) {
+      materialApp = FoldableNavigationSidebar();
     } else {
       materialApp = NoAppSelected();
     }

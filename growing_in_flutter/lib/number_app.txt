@@ -4,3 +4,4 @@ Number App
 1 = Theme Provider
 2 = Curved Navigation Bar
 3 = Download Button
+4 = Foldable Navigation Sidebar
