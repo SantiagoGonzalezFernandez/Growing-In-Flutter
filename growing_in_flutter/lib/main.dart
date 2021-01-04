@@ -1,5 +1,6 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
+import 'package:growing_in_flutter/DownloadButton/download_button.dart';
 
 //Imports that are mine
 //Hidden Drawer Menu
@@ -18,7 +19,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 2;
+  int numberApp = 3;
   Widget materialApp;
 
   @override
@@ -29,6 +30,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = ThemeProvider();
     } else if (numberApp == 2) {
       materialApp = CurvedNavigationBar();
+    } else if (numberApp == 3) {
+      materialApp = DownloadButton();
     } else {
       materialApp = NoAppSelected();
     }

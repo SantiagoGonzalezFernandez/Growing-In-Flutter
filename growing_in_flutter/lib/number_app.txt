@@ -3,3 +3,4 @@ Number App
 0 = Hidden Drawer Menu
 1 = Theme Provider
 2 = Curved Navigation Bar
+3 = Download Button
