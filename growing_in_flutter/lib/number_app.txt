@@ -5,3 +5,4 @@ Number App
 2 = Curved Navigation Bar
 3 = Download Button
 4 = Foldable Navigation Sidebar
+5 = Spin Circle Bottom Navigation Bar
