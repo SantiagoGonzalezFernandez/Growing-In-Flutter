@@ -6,6 +6,7 @@ import 'package:growing_in_flutter/FoldableNavigationSidebar/foldable_navigation
 //Imports that are mine
 //Hidden Drawer Menu
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
+import 'package:growing_in_flutter/NeumorphicButtons/neumorphic_buttons.dart';
 import 'package:growing_in_flutter/SpinCircleBottomNavigationBar/spin_circle_bottom_navigation_bar.dart';
 //Theme Provider
 import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 5;
+  int numberApp = 6;
   Widget materialApp;
 
   @override
@@ -38,6 +39,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = FoldableNavigationSidebar();
     } else if (numberApp == 5) {
       materialApp = SpinCircleBottomNavigationBar();
+    } else if (numberApp == 6) {
+      materialApp = NeumorphicButtons();
     } else {
       materialApp = NoAppSelected();
     }
