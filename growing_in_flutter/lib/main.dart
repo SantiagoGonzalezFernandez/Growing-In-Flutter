@@ -18,6 +18,8 @@ import 'package:growing_in_flutter/SpinCircleBottomNavigationBar/spin_circle_bot
 import 'package:growing_in_flutter/NeumorphicButtons/neumorphic_buttons.dart';
 //Simple Bottom Navigation Bar
 import 'package:growing_in_flutter/SimpleBottomNavigationBar/simple_bottom_navigation_bar.dart';
+//Plant UI
+import 'package:growing_in_flutter/PlantUI/plant_ui.dart';
 
 void main() => runApp(MyApp());
  
@@ -28,7 +30,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 7;
+  int numberApp = 8;
   Widget materialApp;
 
   @override
@@ -49,6 +51,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = NeumorphicButtons();
     } else if (numberApp == 7) {
       materialApp = SimpleBottomNavigationBar();
+    } else if (numberApp == 8) {
+      materialApp = PlantUI();
     } else {
       materialApp = NoAppSelected();
     }
