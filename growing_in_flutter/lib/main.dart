@@ -1,17 +1,23 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
-import 'package:growing_in_flutter/DownloadButton/download_button.dart';
-import 'package:growing_in_flutter/FoldableNavigationSidebar/foldable_navigation_sidebar.dart';
 
 //Imports that are mine
 //Hidden Drawer Menu
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
-import 'package:growing_in_flutter/NeumorphicButtons/neumorphic_buttons.dart';
-import 'package:growing_in_flutter/SpinCircleBottomNavigationBar/spin_circle_bottom_navigation_bar.dart';
 //Theme Provider
 import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
 //Curved Navigation Bar
 import 'package:growing_in_flutter/CurvedNavigationBar/curved_navigation_bar.dart';
+//Download Button
+import 'package:growing_in_flutter/DownloadButton/download_button.dart';
+//Foldable Navigation Sidebar
+import 'package:growing_in_flutter/FoldableNavigationSidebar/foldable_navigation_sidebar.dart';
+//Spin Circle Bottom Navigation Bar
+import 'package:growing_in_flutter/SpinCircleBottomNavigationBar/spin_circle_bottom_navigation_bar.dart';
+//Neumorphic Buttons
+import 'package:growing_in_flutter/NeumorphicButtons/neumorphic_buttons.dart';
+//Simple Bottom Navigation Bar
+import 'package:growing_in_flutter/SimpleBottomNavigationBar/simple_bottom_navigation_bar.dart';
 
 void main() => runApp(MyApp());
  
@@ -22,7 +28,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 6;
+  int numberApp = 7;
   Widget materialApp;
 
   @override
@@ -41,6 +47,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = SpinCircleBottomNavigationBar();
     } else if (numberApp == 6) {
       materialApp = NeumorphicButtons();
+    } else if (numberApp == 7) {
+      materialApp = SimpleBottomNavigationBar();
     } else {
       materialApp = NoAppSelected();
     }
