@@ -15,6 +15,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       child: Column(
         children: [
           HeaderWithSearchBox(size: size),

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 //Imports that are mine
 //Constants
 import 'package:growing_in_flutter/PlantUI/src/constants.dart';
+//Pages
+import 'package:growing_in_flutter/PlantUI/src/pages/details/details_page.dart';
 
 class RecomendsPlants extends StatelessWidget {
   const RecomendsPlants({
@@ -22,21 +24,42 @@ class RecomendsPlants extends StatelessWidget {
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => DetailsPage(),
+                )
+              );
+            },
           ),
           RecomendPlantCard(
             image: 'PlantUI/assets/images/image_2.png',
             title: 'Angelica',
             country: 'Russia',
             price: 440,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => DetailsPage(),
+                )
+              );
+            },
           ),
           RecomendPlantCard(
             image: 'PlantUI/assets/images/image_3.png',
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => DetailsPage(),
+                )
+              );
+            },
           ),
         ],
       ),
