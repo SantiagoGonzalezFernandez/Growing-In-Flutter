@@ -26,17 +26,22 @@ dependencies:
   cupertino_icons: ^1.0.0
   # Hidden Drawer Menu
   hidden_drawer_menu: ^2.0.1
-  # Theme Provider
+  # Theme Provider | Animate Do
   provider: ^4.3.2+3
   # Curved Navigation Bar
   curved_navigation_bar: ^0.3.7
   # Foldable Navigation Sidebar
   foldable_sidebar: ^1.0.0
+  # Foldable Navigation Sidebar
   swipedetector: ^1.2.0
   # Spin Circle Bottom Navigation Bar
   spincircle_bottom_bar: ^1.0.0
   # Plant UI
   flutter_svg: ^0.19.1
+  # Animate Do
+  animate_do: ^1.7.5
+  # Animate Do
+  font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
   flutter_test:

@@ -20,6 +20,8 @@ import 'package:growing_in_flutter/NeumorphicButtons/neumorphic_buttons.dart';
 import 'package:growing_in_flutter/SimpleBottomNavigationBar/simple_bottom_navigation_bar.dart';
 //Plant UI
 import 'package:growing_in_flutter/PlantUI/plant_ui.dart';
+//Animate Do
+import 'package:growing_in_flutter/AnimateDo/animate_do.dart';
 
 void main() => runApp(MyApp());
  
@@ -30,7 +32,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 8;
+  int numberApp = 9;
   Widget materialApp;
 
   @override
@@ -53,6 +55,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = SimpleBottomNavigationBar();
     } else if (numberApp == 8) {
       materialApp = PlantUI();
+    } else if (numberApp == 9) {
+      materialApp = AnimateDo();
     } else {
       materialApp = NoAppSelected();
     }
