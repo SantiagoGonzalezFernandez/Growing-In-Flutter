@@ -22,6 +22,8 @@ import 'package:growing_in_flutter/SimpleBottomNavigationBar/simple_bottom_navig
 import 'package:growing_in_flutter/PlantUI/plant_ui.dart';
 //Animate Do
 import 'package:growing_in_flutter/AnimateDo/animate_do.dart';
+//Animated Login UI
+import 'package:growing_in_flutter/AnimatedLoginUI/animated_login_ui.dart';
 
 void main() => runApp(MyApp());
  
@@ -32,7 +34,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 9;
+  int numberApp = 10;
   Widget materialApp;
 
   @override
@@ -57,6 +59,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = PlantUI();
     } else if (numberApp == 9) {
       materialApp = AnimateDo();
+    } else if (numberApp == 10) {
+      materialApp = AnimatedLoginUI();
     } else {
       materialApp = NoAppSelected();
     }

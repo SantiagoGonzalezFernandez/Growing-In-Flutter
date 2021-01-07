@@ -26,7 +26,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   # Hidden Drawer Menu
   hidden_drawer_menu: ^2.0.1
-  # Theme Provider | Animate Do
+  # Theme Provider | Animate Do | Animated Login UI
   provider: ^4.3.2+3
   # Curved Navigation Bar
   curved_navigation_bar: ^0.3.7
