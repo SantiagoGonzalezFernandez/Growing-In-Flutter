@@ -1,11 +1,13 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:growing_in_flutter/MeditateUI/src/pages/details_page.dart';
 
 //Imports that are mine
 //Widgets
 import 'package:growing_in_flutter/MeditateUI/src/widgets/category_card.dart';
 import 'package:growing_in_flutter/MeditateUI/src/widgets/custom_bottom_navigation_bar.dart';
+import 'package:growing_in_flutter/MeditateUI/src/widgets/custom_search_bar.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -52,24 +54,7 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.w900
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 30.0),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 30.0,
-                      vertical: 5.0
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(29.5)
-                    ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Search',
-                        icon: SvgPicture.asset('MeditateUI/assets/icons/search.svg'),
-                        border: InputBorder.none
-                      ),
-                    ),
-                  ),
+                  CustomSearchBar(),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -90,7 +75,14 @@ class HomePage extends StatelessWidget {
                         CategoryCard(
                           svgSrc: 'MeditateUI/assets/icons/Meditation.svg',
                           title: 'Meditation',
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailsPage(),
+                              )
+                            );
+                          },
                         ),
                         CategoryCard(
                           svgSrc: 'MeditateUI/assets/icons/yoga.svg',
