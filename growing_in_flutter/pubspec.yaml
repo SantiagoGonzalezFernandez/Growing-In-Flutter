@@ -36,7 +36,7 @@ dependencies:
   swipedetector: ^1.2.0
   # Spin Circle Bottom Navigation Bar
   spincircle_bottom_bar: ^1.0.0
-  # Plant UI
+  # Plant UI | Meditate UI
   flutter_svg: ^0.19.1
   # Animate Do
   animate_do: ^1.7.5
@@ -55,29 +55,18 @@ flutter:
     # Plant UI
     - PlantUI/assets/icons/
     - PlantUI/assets/images/
+    # Meditate UI
+    - MeditateUI/assets/icons/
+    - MeditateUI/assets/images/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    # Meditate UI
+    - family: Cairo
+      fonts:
+        - asset: MeditateUI/assets/fonts/Cairo/Cairo-Regular.ttf
+        - asset: MeditateUI/assets/fonts/Cairo/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: MeditateUI/assets/fonts/Cairo/Cairo-Bold.ttf
+          weight: 700
+        - asset: MeditateUI/assets/fonts/Cairo/Cairo-Black.ttf
+          weight: 900

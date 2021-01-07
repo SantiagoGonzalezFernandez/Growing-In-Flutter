@@ -1,13 +1,14 @@
 Number App
 
-0 = Hidden Drawer Menu
-1 = Theme Provider
-2 = Curved Navigation Bar
-3 = Download Button
-4 = Foldable Navigation Sidebar
-5 = Spin Circle Bottom Navigation Bar
-6 = Neumorphic Buttons
-7 = Simple Bottom Navigation Bar
-8 = Plant UI
-9 = Animate Do
-9 = Animated Login UI
+0  = Hidden Drawer Menu
+1  = Theme Provider
+2  = Curved Navigation Bar
+3  = Download Button
+4  = Foldable Navigation Sidebar
+5  = Spin Circle Bottom Navigation Bar
+6  = Neumorphic Buttons
+7  = Simple Bottom Navigation Bar
+8  = Plant UI
+9  = Animate Do
+10 = Animated Login UI
+11 = Meditate UI

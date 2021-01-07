@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //Imports that are mine
 //Hidden Drawer Menu
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
+import 'package:growing_in_flutter/MeditateUI/meditate_ui.dart';
 //Theme Provider
 import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
 //Curved Navigation Bar
@@ -34,7 +35,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 10;
+  int numberApp = 11;
   Widget materialApp;
 
   @override
@@ -61,6 +62,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = AnimateDo();
     } else if (numberApp == 10) {
       materialApp = AnimatedLoginUI();
+    } else if (numberApp == 11) {
+      materialApp = MeditateUI();
     } else {
       materialApp = NoAppSelected();
     }
