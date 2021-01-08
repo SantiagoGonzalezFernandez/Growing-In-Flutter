@@ -23,7 +23,6 @@ class _IntroPageState extends State<IntroPage> with SingleTickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
-    final color = Colors.white;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
