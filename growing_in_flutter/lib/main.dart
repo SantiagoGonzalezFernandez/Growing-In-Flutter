@@ -1,5 +1,6 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 //Imports that are mine
 //Hidden Drawer Menu
@@ -25,45 +26,65 @@ import 'package:growing_in_flutter/PlantUI/plant_ui.dart';
 import 'package:growing_in_flutter/AnimateDo/animate_do.dart';
 //Animated Login UI
 import 'package:growing_in_flutter/AnimatedLoginUI/animated_login_ui.dart';
+import 'package:growing_in_flutter/TicTacToe/tic_tac_toe.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  int numberApp = 12;
+  // Tic Tac Toe
+  if(numberApp == 12){
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
+    SystemChrome.setEnabledSystemUIOverlays([]);
+  }
+
+  runApp(MyApp(numberApp: numberApp)); 
+}
  
 class MyApp extends StatefulWidget {
+  final int numberApp;
+
+  MyApp({
+    @required this.numberApp
+  });
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   
-  int numberApp = 11;
   Widget materialApp;
 
   @override
   Widget build(BuildContext context) {
-    if(numberApp == 0){
+    if(widget.numberApp == 0){
       materialApp = HiddenDrawerMenu();
-    } else if (numberApp == 1) {
+    } else if (widget.numberApp == 1) {
       materialApp = ThemeProvider();
-    } else if (numberApp == 2) {
+    } else if (widget.numberApp == 2) {
       materialApp = CurvedNavigationBar();
-    } else if (numberApp == 3) {
+    } else if (widget.numberApp == 3) {
       materialApp = DownloadButton();
-    } else if (numberApp == 4) {
+    } else if (widget.numberApp == 4) {
       materialApp = FoldableNavigationSidebar();
-    } else if (numberApp == 5) {
+    } else if (widget.numberApp == 5) {
       materialApp = SpinCircleBottomNavigationBar();
-    } else if (numberApp == 6) {
+    } else if (widget.numberApp == 6) {
       materialApp = NeumorphicButtons();
-    } else if (numberApp == 7) {
+    } else if (widget.numberApp == 7) {
       materialApp = SimpleBottomNavigationBar();
-    } else if (numberApp == 8) {
+    } else if (widget.numberApp == 8) {
       materialApp = PlantUI();
-    } else if (numberApp == 9) {
+    } else if (widget.numberApp == 9) {
       materialApp = AnimateDo();
-    } else if (numberApp == 10) {
+    } else if (widget.numberApp == 10) {
       materialApp = AnimatedLoginUI();
-    } else if (numberApp == 11) {
+    } else if (widget.numberApp == 11) {
       materialApp = MeditateUI();
+    } else if (widget.numberApp == 12) {
+      materialApp = TicTacToe();
     } else {
       materialApp = NoAppSelected();
     }
@@ -75,6 +96,7 @@ class NoAppSelected extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'No App Selected',
       home: Center(
         child: Text(
