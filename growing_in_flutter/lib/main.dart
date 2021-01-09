@@ -35,10 +35,12 @@ import 'package:growing_in_flutter/AnimatedRouteTransitions/animated_route_trans
 import 'package:growing_in_flutter/Calculator/calculator.dart';
 //Stream Builder Example
 import 'package:growing_in_flutter/StreamBuilderExample/stream_builder_example.dart';
+//Bloc Yield Async Streams
+import 'package:growing_in_flutter/BlocYieldAsyncStreams/bloc_yield_async_streams.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 15;
+  int numberApp = 16;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
@@ -99,6 +101,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = Calculator();
     } else if (widget.numberApp == 15) {
       materialApp = StreamBuilderExample();
+    } else if (widget.numberApp == 16) {
+      materialApp = BlocYieldAsyncStreams();
     } else {
       materialApp = NoAppSelected();
     }
