@@ -30,10 +30,12 @@ import 'package:growing_in_flutter/AnimatedLoginUI/animated_login_ui.dart';
 import 'package:growing_in_flutter/TicTacToe/tic_tac_toe.dart';
 //Animated Route Transitions
 import 'package:growing_in_flutter/AnimatedRouteTransitions/animated_route_transitions.dart';
+//Calculator
+import 'package:growing_in_flutter/Calculator/calculator.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 13;
+  int numberApp = 14;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
@@ -90,6 +92,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = TicTacToe();
     } else if (widget.numberApp == 13) {
       materialApp = AnimatedRouteTransitions();
+    } else if (widget.numberApp == 14) {
+      materialApp = Calculator();
     } else {
       materialApp = NoAppSelected();
     }

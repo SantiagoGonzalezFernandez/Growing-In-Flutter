@@ -46,6 +46,8 @@ dependencies:
   google_fonts: ^1.1.1
   # Tic Tac Toe
   avatar_glow: ^1.2.0 
+  # Calculator
+  math_expressions: ^2.0.2
 
 dev_dependencies:
   flutter_test:
