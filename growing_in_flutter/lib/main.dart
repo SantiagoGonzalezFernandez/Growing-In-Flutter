@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 //Imports that are mine
 //Hidden Drawer Menu
 import 'package:growing_in_flutter/HiddenDrawerMenu/hidden_drawer_menu.dart';
-import 'package:growing_in_flutter/MeditateUI/meditate_ui.dart';
 //Theme Provider
 import 'package:growing_in_flutter/ThemeProvider/theme_provider.dart';
 //Curved Navigation Bar
@@ -26,6 +25,8 @@ import 'package:growing_in_flutter/PlantUI/plant_ui.dart';
 import 'package:growing_in_flutter/AnimateDo/animate_do.dart';
 //Animated Login UI
 import 'package:growing_in_flutter/AnimatedLoginUI/animated_login_ui.dart';
+//Meditate UI
+import 'package:growing_in_flutter/MeditateUI/meditate_ui.dart';
 //Tic Tac Toe
 import 'package:growing_in_flutter/TicTacToe/tic_tac_toe.dart';
 //Animated Route Transitions
