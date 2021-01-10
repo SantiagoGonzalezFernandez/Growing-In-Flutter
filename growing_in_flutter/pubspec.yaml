@@ -48,6 +48,8 @@ dependencies:
   avatar_glow: ^1.2.0 
   # Calculator
   math_expressions: ^2.0.2
+  # Login Page Bloc Pattern
+  rxdart: ^0.25.0 
 
 dev_dependencies:
   flutter_test:
