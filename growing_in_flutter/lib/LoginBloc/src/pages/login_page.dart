@@ -1,9 +1,29 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 //Imports that are mine
+//Blocs
+import 'package:growing_in_flutter/LoginBloc/src/blocs/login_bloc/login_bloc.dart';
+//Pages
+import 'package:growing_in_flutter/LoginBloc/src/pages/home_page.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+
+  TextEditingController emailController;
+  TextEditingController passwordController;
+
+  @override
+  void initState() {
+    super.initState();
+    emailController    = TextEditingController();
+    passwordController = TextEditingController();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -14,27 +34,70 @@ class LoginPage extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
-        child: Form(
-          child: Column(
-            children: [
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Email'
+        child: BlocListener<LoginBloc, LoginState>(
+          listener: (context, state) {
+            if(state is ErrorState){
+              _showError(context, state.message);
+            }
+            if(state is LoggedInState){
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => HomePage(),
+                )
+              );
+            }
+          },
+          child: BlocBuilder<LoginBloc, LoginState>(
+            builder: (context, state) {  
+              return Form(
+                child: Column(
+                  children: [
+                    TextFormField(
+                      decoration: InputDecoration(
+                        labelText: 'Email'
+                      ),
+                      controller: emailController,
+                    ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        labelText: 'Password'
+                      ),
+                      obscureText: true,
+                      controller: passwordController,
+                    ),
+                    if(state is LoginInState)
+                      Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: CircularProgressIndicator(),
+                      ) 
+                    else 
+                      RaisedButton(
+                        child: Text('Login'),
+                        onPressed: _doLogin,
+                      )
+                  ],
                 ),
-              ),
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Password'
-                ),
-                obscureText: true,
-              ),
-              RaisedButton(
-                child: Text('Login'),
-                onPressed: () {},
-              )
-            ],
+              );
+            },
           ),
         ),
+      )
+    );
+  }
+
+  void _doLogin() {
+    BlocProvider.of<LoginBloc>(context).add(
+      DoLoginEvent(
+        email: emailController.text,
+        password: passwordController.text
+      )
+    );
+  }
+
+  void _showError(BuildContext context, String message){
+    Scaffold.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message),
       )
     );
   }
