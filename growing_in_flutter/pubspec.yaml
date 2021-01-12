@@ -50,6 +50,10 @@ dependencies:
   math_expressions: ^2.0.2
   # Login Page Bloc Pattern
   rxdart: ^0.25.0 
+  # Login Bloc
+  flutter_bloc: ^6.1.1
+  # Login Bloc
+  equatable: ^1.2.5
 
 dev_dependencies:
   flutter_test:

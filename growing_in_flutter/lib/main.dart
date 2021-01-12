@@ -39,10 +39,12 @@ import 'package:growing_in_flutter/StreamBuilderExample/stream_builder_example.d
 import 'package:growing_in_flutter/BlocYieldAsyncStreams/bloc_yield_async_streams.dart';
 //Login Page Bloc Pattern
 import 'package:growing_in_flutter/LoginPageBlocPattern/login_page_bloc_pattern.dart';
+//Login Bloc
+import 'package:growing_in_flutter/LoginBloc/login_bloc.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 17;
+  int numberApp = 18;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
@@ -107,6 +109,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = BlocYieldAsyncStreams();
     } else if (widget.numberApp == 17) {
       materialApp = LoginPageBlocPattern();
+    } else if (widget.numberApp == 18) {
+      materialApp = LoginBloc();
     } else {
       materialApp = NoAppSelected();
     }
