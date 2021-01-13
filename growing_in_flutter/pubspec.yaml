@@ -50,10 +50,14 @@ dependencies:
   math_expressions: ^2.0.2
   # Login Page Bloc Pattern
   rxdart: ^0.25.0 
-  # Login Bloc
+  # Login Bloc | Weather Bloc
   flutter_bloc: ^6.1.1
-  # Login Bloc
+  # Login Bloc | Weather Bloc
   equatable: ^1.2.5
+  # Weather Bloc
+  flare_flutter: ^2.0.6
+  # Weather Bloc
+  http: ^0.12.2
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +76,8 @@ flutter:
     - MeditateUI/assets/images/
     # Tic Tac Tow
     - TicTacToe/assets/images/
+    # Weather Bloc
+    - WeatherBloc/assets/animations/
 
   fonts:
     # Meditate UI
