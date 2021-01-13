@@ -54,7 +54,7 @@ dependencies:
   flutter_bloc: ^6.1.1
   # Login Bloc | Weather Bloc
   equatable: ^1.2.5
-  # Weather Bloc
+  # Weather Bloc | Login Flare 2D UI
   flare_flutter: ^2.0.6
   # Weather Bloc
   http: ^0.12.2
@@ -78,6 +78,8 @@ flutter:
     - TicTacToe/assets/images/
     # Weather Bloc
     - WeatherBloc/assets/animations/
+    # Login Flare 2D UI
+    - LoginFlare2DUI/assets/animations/
 
   fonts:
     # Meditate UI
