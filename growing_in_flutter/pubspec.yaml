@@ -80,6 +80,8 @@ flutter:
     - WeatherBloc/assets/animations/
     # Login Flare 2D UI
     - LoginFlare2DUI/assets/animations/
+    # Pet UI
+    - PetUI/assets/images/
 
   fonts:
     # Meditate UI
@@ -92,3 +94,11 @@ flutter:
           weight: 700
         - asset: MeditateUI/assets/fonts/Cairo/Cairo-Black.ttf
           weight: 900
+    # Pet UI
+    - family: Circular
+      fonts:
+        - asset: PetUI/assets/fonts/CircularStd-Medium.ttf
+        - asset: PetUI/assets/fonts/CircularAir-Light.ttf
+          weight: 100
+        - asset: PetUI/assets/fonts/CircularStd-Bold.ttf
+          weight: 500

@@ -45,10 +45,12 @@ import 'package:growing_in_flutter/LoginBloc/login_bloc.dart';
 import 'package:growing_in_flutter/WeatherBloc/weather_bloc.dart';
 //Login Flare 2D UI
 import 'package:growing_in_flutter/LoginFlare2DUI/login_flare_2d_ui.dart';
+//Pet UI
+import 'package:growing_in_flutter/PetUI/pet_ui.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 20;
+  int numberApp = 21;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
@@ -119,6 +121,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = WeatherBloc();
     } else if (widget.numberApp == 20) {
       materialApp = LoginFlare2DUI();
+    } else if (widget.numberApp == 21) {
+      materialApp = PetUI();
     } else {
       materialApp = NoAppSelected();
     }
