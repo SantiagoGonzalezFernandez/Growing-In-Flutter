@@ -82,6 +82,8 @@ flutter:
     - LoginFlare2DUI/assets/animations/
     # Pet UI
     - PetUI/assets/images/
+    # Flappy Bird
+    - FlappyBird/assets/images/
 
   fonts:
     # Meditate UI
