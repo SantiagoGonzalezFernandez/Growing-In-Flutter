@@ -12,6 +12,9 @@ class PetUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pet UI',
+      theme: ThemeData(
+        fontFamily: 'Circular'
+      ),
       home: InitialPage(),
     );
   }

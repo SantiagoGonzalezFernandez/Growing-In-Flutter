@@ -40,7 +40,7 @@ dependencies:
   flutter_svg: ^0.19.1
   # Animate Do
   animate_do: ^1.7.5
-  # Animate Do
+  # Animate Do | Pet UI
   font_awesome_flutter: ^8.11.0
   # Tic Tac Toe
   google_fonts: ^1.1.1
