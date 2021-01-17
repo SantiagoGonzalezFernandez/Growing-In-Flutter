@@ -58,6 +58,8 @@ dependencies:
   flare_flutter: ^2.0.6
   # Weather Bloc
   http: ^0.12.2
+  # The Basics Web
+  responsive_builder: ^0.3.0
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +86,8 @@ flutter:
     - PetUI/assets/images/
     # Flappy Bird
     - FlappyBird/assets/images/
+    # The Basics Web 
+    - TheBasicsWeb/assets/images/
 
   fonts:
     # Meditate UI
@@ -104,3 +108,10 @@ flutter:
           weight: 100
         - asset: PetUI/assets/fonts/CircularStd-Bold.ttf
           weight: 500
+    # The Basics Web
+    - family: Open Sans
+      fonts:
+        - asset: TheBasicsWeb/assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: TheBasicsWeb/assets/fonts/OpenSans-Regular.ttf
+          weight: 400
