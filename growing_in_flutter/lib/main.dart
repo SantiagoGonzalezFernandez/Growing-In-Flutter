@@ -51,10 +51,12 @@ import 'package:growing_in_flutter/PetUI/pet_ui.dart';
 import 'package:growing_in_flutter/FlappyBird/flappy_bird.dart';
 //The Basics Web
 import 'package:growing_in_flutter/TheBasicsWeb/the_basics_web.dart';
+//Flutter Demo Bloc
+import 'package:growing_in_flutter/FlutterDemoBloc/flutter_demo_bloc.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 23;
+  int numberApp = 24;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
@@ -131,6 +133,8 @@ class _MyAppState extends State<MyApp> {
       materialApp = FlappyBird();
     } else if (widget.numberApp == 23) {
       materialApp = TheBasicsWeb();
+    } else if (widget.numberApp == 24) {
+      materialApp = FlutterDemoBloc();
     } else {
       materialApp = NoAppSelected();
     }

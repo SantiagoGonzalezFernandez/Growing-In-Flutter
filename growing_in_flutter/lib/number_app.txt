@@ -24,3 +24,4 @@ Number App
 21 = Pet UI
 22 = Flappy Bird
 23 = The Basics Web
+24 = Flutter Demo Bloc
