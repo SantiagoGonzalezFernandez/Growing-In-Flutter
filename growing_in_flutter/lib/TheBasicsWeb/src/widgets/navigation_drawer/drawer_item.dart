@@ -1,8 +1,9 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
-import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/navigation_bar_item.dart';
 
 //Imports that are mine
+//Widgets
+import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/item/navigation_bar_item.dart';
 
 class DrawerItem extends StatelessWidget {
 
@@ -25,7 +26,11 @@ class DrawerItem extends StatelessWidget {
         children: [
           Icon(icon),
           SizedBox(width: 30.0),
-          NavigationBarItem(title: title, navigationPath: navigationPath)
+          NavigationBarItem(
+            title: title, 
+            navigationPath: navigationPath,
+            icon: Icons.ac_unit, //TODO: CAMBIAR ESTO
+          )
         ],
       ),
     );

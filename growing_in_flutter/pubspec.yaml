@@ -26,7 +26,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   # Hidden Drawer Menu
   hidden_drawer_menu: ^2.0.1
-  # Theme Provider | Animate Do | Animated Login UI
+  # Theme Provider | Animate Do | Animated Login UI | The Basics Web
   provider: ^4.3.2+3
   # Curved Navigation Bar
   curved_navigation_bar: ^0.3.7
@@ -56,12 +56,14 @@ dependencies:
   equatable: ^1.2.5
   # Weather Bloc | Login Flare 2D UI
   flare_flutter: ^2.0.6
-  # Weather Bloc
+  # Weather Bloc | The Basics Web
   http: ^0.12.2
   # The Basics Web
   responsive_builder: ^0.3.0
   # The Basics Web
   get_it: ^5.0.4
+  # The Basics Web
+  provider_architecture: ^1.1.1+1
 
 dev_dependencies:
   flutter_test:
