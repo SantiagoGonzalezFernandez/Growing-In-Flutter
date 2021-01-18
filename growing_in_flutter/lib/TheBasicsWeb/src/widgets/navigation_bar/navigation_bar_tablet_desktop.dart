@@ -1,5 +1,6 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/routing/route_names.dart';
 
 //Imports that are mine
 //Local Widgets
@@ -19,9 +20,9 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              NavigationBarItem(title: 'Episodes'),
+              NavigationBarItem(title: 'Episodes', navigationPath: EpisodesRoute),
               SizedBox(width: 60.0),
-              NavigationBarItem(title: 'About'),
+              NavigationBarItem(title: 'About', navigationPath: AboutRoute),
             ],
           )
         ],

@@ -1,5 +1,6 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/routing/route_names.dart';
 
 //Imports that are mine
 //Widgets
@@ -24,8 +25,8 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: [
           NavigationDrawerHeader(),
-          DrawerItem(title: 'Episodes', icon: Icons.videocam),
-          DrawerItem(title: 'About', icon: Icons.help),
+          DrawerItem(title: 'Episodes', icon: Icons.videocam, navigationPath: EpisodesRoute),
+          DrawerItem(title: 'About', icon: Icons.help, navigationPath: AboutRoute),
         ],
       ),
     );

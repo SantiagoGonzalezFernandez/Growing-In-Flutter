@@ -8,11 +8,13 @@ class DrawerItem extends StatelessWidget {
 
   final String title;
   final IconData icon;
+  final String navigationPath;
 
   DrawerItem({
     Key key, 
-    this.title, 
-    this.icon
+    @required this.title, 
+    @required this.icon,
+    @required this.navigationPath,
   }) : super(key: key);
 
   @override
@@ -23,7 +25,7 @@ class DrawerItem extends StatelessWidget {
         children: [
           Icon(icon),
           SizedBox(width: 30.0),
-          NavigationBarItem(title: title)
+          NavigationBarItem(title: title, navigationPath: navigationPath)
         ],
       ),
     );

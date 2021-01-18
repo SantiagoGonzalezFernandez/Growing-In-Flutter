@@ -51,18 +51,22 @@ import 'package:growing_in_flutter/PetUI/pet_ui.dart';
 import 'package:growing_in_flutter/FlappyBird/flappy_bird.dart';
 //The Basics Web
 import 'package:growing_in_flutter/TheBasicsWeb/the_basics_web.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/locator.dart';
 //Flutter Demo Bloc
 import 'package:growing_in_flutter/FlutterDemoBloc/flutter_demo_bloc.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  int numberApp = 24;
+  int numberApp = 23;
   // Tic Tac Toe
   if(numberApp == 12){
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp
     ]);
     SystemChrome.setEnabledSystemUIOverlays([]);
+  }
+  if(numberApp == 23){
+    setupLocator();
   }
 
   runApp(MyApp(numberApp: numberApp)); 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 //Imports that are mine
 //Pages
-import 'package:growing_in_flutter/TheBasicsWeb/src/pages/home_page.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/pages/layout_template.dart';
 
 class TheBasicsWeb extends StatelessWidget {
 
@@ -18,7 +18,7 @@ class TheBasicsWeb extends StatelessWidget {
           fontFamily: 'Open Sans'
         )
       ),
-      home: HomePage(),
+      home: LayoutTemplate(),
     );
   }
 }
