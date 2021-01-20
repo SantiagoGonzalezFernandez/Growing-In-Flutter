@@ -2,8 +2,15 @@
 import 'package:flutter/material.dart';
 
 //Imports that are mine
-//Pages
-import 'package:growing_in_flutter/TheBasicsWeb/src/pages/layout_template.dart';
+//Views
+import 'package:growing_in_flutter/TheBasicsWeb/src/views/layout_template/layout_template.dart';
+//Locator
+import 'package:growing_in_flutter/TheBasicsWeb/src/locator.dart';
+//Services
+import 'package:growing_in_flutter/TheBasicsWeb/src/services/navigation_service.dart';
+//Routing
+import 'package:growing_in_flutter/TheBasicsWeb/src/routing/router.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/routing/route_names.dart';
 
 class TheBasicsWeb extends StatelessWidget {
 
@@ -18,7 +25,10 @@ class TheBasicsWeb extends StatelessWidget {
           fontFamily: 'Open Sans'
         )
       ),
-      home: LayoutTemplate(),
+      builder: (context, child) => LayoutTemplate(child: child),
+      navigatorKey: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: HomeRoute,            
     );
   }
 }

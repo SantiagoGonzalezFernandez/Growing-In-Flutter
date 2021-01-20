@@ -8,11 +8,13 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/locator.dart';
 //Services
 import 'package:growing_in_flutter/TheBasicsWeb/src/services/navigation_service.dart';
-//Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/navigation_bar_item_model.dart';
+//DataModels
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/navigation_bar_item_model.dart';
 //Widgets
-import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/item/navigation_bar_item_mobile.dart';
-import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/item/navigation_bar_item_tablet_desktop.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar_item/navigation_bar_item_mobile.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar_item/navigation_bar_item_tablet_desktop.dart';
+//Extensions
+import 'package:growing_in_flutter/TheBasicsWeb/src/extensions/hover_extensions.dart';
 
 class NavigationBarItem extends StatelessWidget {
 
@@ -24,7 +26,7 @@ class NavigationBarItem extends StatelessWidget {
     Key key, 
     @required this.title,
     @required this.navigationPath,
-    @required this.icon,
+    this.icon,
   }) : super(key: key); 
 
   @override
@@ -43,7 +45,7 @@ class NavigationBarItem extends StatelessWidget {
         child: ScreenTypeLayout(
           mobile: NavigationBarItemMobile(),  
           tablet: NavigationBarItemTabletDesktop(),  
-        ),
+        ).showCursorOnHover.moveUpOnHover,
       )
     );
   }

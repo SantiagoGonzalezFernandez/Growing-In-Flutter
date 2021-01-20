@@ -5,7 +5,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 //Imports that are mine
 //Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/season_details_model.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/season_details_model.dart';
 //Styles
 import 'package:growing_in_flutter/TheBasicsWeb/src/styles/text_styles.dart';
 

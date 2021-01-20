@@ -6,7 +6,8 @@ import 'package:responsive_builder/responsive_builder.dart';
 //Widgets
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/call_to_action/call_to_action_mobile.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/call_to_action/call_to_action_tablet_desktop.dart';
-
+//Extensions
+import 'package:growing_in_flutter/TheBasicsWeb/src/extensions/hover_extensions.dart';
 class CallToAction extends StatelessWidget {
 
   final String title;
@@ -21,6 +22,6 @@ class CallToAction extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: CallToActionMobile(title: title),
       tablet: CallToActionTabletDesktop(title: title),
-    );
+    ).showCursorOnHover.moveUpOnHover;
   }
 }

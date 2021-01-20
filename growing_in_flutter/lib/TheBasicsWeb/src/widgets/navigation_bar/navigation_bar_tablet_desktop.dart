@@ -1,11 +1,12 @@
 //Imports that are not mine
 import 'package:flutter/material.dart';
-import 'package:growing_in_flutter/TheBasicsWeb/src/routing/route_names.dart';
 
 //Imports that are mine
-//Local Widgets
+//Widgets
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/navigation_bar_logo.dart';
-import 'item/navigation_bar_item.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar_item/navigation_bar_item.dart';
+//Routing
+import 'package:growing_in_flutter/TheBasicsWeb/src/routing/route_names.dart';
 
 class NavigationBarTabletDesktop extends StatelessWidget {
 
@@ -23,13 +24,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
               NavigationBarItem(
                 title: 'Episodes', 
                 navigationPath: EpisodesRoute,
-                icon: Icons.ac_unit_outlined, //TODO: CAMBIAR ESTO
               ),
               SizedBox(width: 60.0),
               NavigationBarItem(
                 title: 'About', 
                 navigationPath: AboutRoute,
-                icon: Icons.ac_unit_outlined, //TODO: CAMBIAR ESTO  
               ),
             ],
           )

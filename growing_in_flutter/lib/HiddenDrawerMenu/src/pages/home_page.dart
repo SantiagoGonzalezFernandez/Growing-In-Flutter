@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  List<ScreenHiddenDrawer> items = new List();
+  List<ScreenHiddenDrawer> items = [];
 
   @override
   void initState() {

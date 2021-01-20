@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 
 //Imports that are mine
-//Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/navigation_bar_item_model.dart';
+//DataModels
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/navigation_bar_item_model.dart';
 
 class NavigationBarItemMobile extends ProviderWidget<NavigationBarItemModel> {
   @override

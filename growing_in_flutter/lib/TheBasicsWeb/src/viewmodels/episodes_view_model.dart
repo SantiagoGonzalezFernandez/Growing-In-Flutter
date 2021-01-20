@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 //Imports that are mine
 //Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/episode_item_model.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/episode_item_model.dart';
 //Locator
 import 'package:growing_in_flutter/TheBasicsWeb/src/locator.dart';
 //Services
@@ -28,7 +28,6 @@ class EpisodeViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(

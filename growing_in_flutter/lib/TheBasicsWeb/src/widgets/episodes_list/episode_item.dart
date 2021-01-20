@@ -2,8 +2,10 @@
 import 'package:flutter/material.dart';
 
 //Imports that are mine
-//Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/episode_item_model.dart';
+//DataModels
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/episode_item_model.dart';
+//Extensions
+import 'package:growing_in_flutter/TheBasicsWeb/src/extensions/hover_extensions.dart';
 
 class EpisodeItem extends StatelessWidget {
 
@@ -57,6 +59,6 @@ class EpisodeItem extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ).showCursorOnHover;
   }
 }

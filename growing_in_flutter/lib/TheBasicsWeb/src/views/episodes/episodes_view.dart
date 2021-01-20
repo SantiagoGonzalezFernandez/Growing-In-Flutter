@@ -7,7 +7,7 @@ import 'package:provider_architecture/provider_architecture.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/season_details.dart/season_details.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/episodes_list/episode_list.dart';
 //Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/season_details_model.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/season_details_model.dart';
 //Viewmodels
 import 'package:growing_in_flutter/TheBasicsWeb/src/viewmodels/episodes_view_model.dart';
 

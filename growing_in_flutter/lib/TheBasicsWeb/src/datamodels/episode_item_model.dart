@@ -1,5 +1,4 @@
 //Imports that are not mine
-import 'package:flutter/foundation.dart';
 
 //Imports that are mine
 
@@ -10,9 +9,9 @@ class EpisodeItemModel {
   final String imageUrl;
 
   EpisodeItemModel({
-    @required this.title, 
-    @required this.duration, 
-    @required this.imageUrl
+    this.title, 
+    this.duration, 
+    this.imageUrl
   });
 
   EpisodeItemModel.fromJson(Map<String, dynamic> map) 

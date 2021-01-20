@@ -8,7 +8,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/season_details.dart/season_details_mobile.dart';
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/season_details.dart/season_details_tablet_desktop.dart';
 //Models
-import 'package:growing_in_flutter/TheBasicsWeb/src/models/season_details_model.dart';
+import 'package:growing_in_flutter/TheBasicsWeb/src/datamodels/season_details_model.dart';
 
 class SeasonDetails extends StatelessWidget {
 

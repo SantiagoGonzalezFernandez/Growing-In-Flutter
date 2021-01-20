@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 //Imports that are mine
+//Widgets
 import 'package:growing_in_flutter/TheBasicsWeb/src/widgets/navigation_bar/navigation_bar_logo.dart';
 
 class NavigationBarMobile extends StatelessWidget {
@@ -16,9 +17,7 @@ class NavigationBarMobile extends StatelessWidget {
         children: [
           IconButton(
             icon: Icon(Icons.menu),
-            onPressed: () {
-
-            },
+            onPressed: () {},
           ),
           NavigationBarLogo()
         ],
